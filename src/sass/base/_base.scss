@@ -1,0 +1,48 @@
+/* 
+  Author: Walter Sono
+  Year: 2022
+  For: ASTS
+*/
+
+@font-face {
+  font-family: Gotham;
+  src: url("./../fonts/gotham/GothamBook.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Gotham;
+  src: url("./../fonts/gotham/GothamLight.ttf");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: Gotham;
+  src: url("./../fonts/gotham/GothamBold.ttf");
+  font-weight: bold;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: Gotham;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}

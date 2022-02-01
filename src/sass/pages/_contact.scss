@@ -1,0 +1,29 @@
+.contact-page-info {
+  padding: 8rem 0;
+  background-color: $color-white-1;
+
+  &__item {
+    display: flex;
+  }
+
+  &__icon {
+    width: 4rem;
+    height: 4rem;
+    fill: $color-orange-1;
+  }
+
+  &__text-box {
+    padding: 1rem;
+  }
+
+  &__title {
+    color: $color-blue-1;
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+
+  &__text {
+    margin-top: 1rem;
+    line-height: 1.5;
+  }
+}

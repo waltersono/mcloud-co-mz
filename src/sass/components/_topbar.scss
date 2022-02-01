@@ -1,0 +1,36 @@
+.topbar {
+  padding: 1.2rem 0;
+  font-size: 1.4rem;
+  &__items {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 2rem;
+      padding-right: 1rem;
+      border-right: 0.1rem solid $color-white-1;
+    }
+  }
+
+  &__link {
+    color: $color-white-1;
+    & > svg {
+      width: 1rem;
+      height: 1rem;
+      fill: $color-white-1;
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .topbar {
+    &__link {
+      & > svg {
+        display: none;
+      }
+    }
+  }
+}

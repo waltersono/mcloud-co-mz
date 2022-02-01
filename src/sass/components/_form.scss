@@ -1,0 +1,49 @@
+.form {
+  &__group {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__label {
+    font-weight: bold;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    &--white {
+      color: $color-white-1;
+    }
+  }
+
+  &__input {
+    outline: none;
+    padding: 0.8em;
+    border-radius: 3rem;
+    font-size: 1.4rem;
+
+    &--round {
+      border-radius: 5rem;
+    }
+    &--transperant {
+      background-color: transparent;
+    }
+
+    &--white {
+      border: 0.3rem solid $color-white-1;
+      color: white;
+    }
+  }
+
+  &__textarea {
+    outline: none;
+
+    &--round {
+      border-radius: 5rem;
+    }
+    &--transperant {
+      background-color: transparent;
+    }
+  }
+}

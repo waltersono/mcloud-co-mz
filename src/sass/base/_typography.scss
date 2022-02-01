@@ -1,0 +1,62 @@
+.h1 {
+  font-size: 5rem;
+  font-family: Gotham;
+  font-weight: 500;
+}
+
+.h1--bold {
+  font-weight: bold;
+}
+
+.h1--white {
+  color: white;
+}
+
+.h2 {
+  font-size: 4rem;
+  font-family: Gotham;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.h2--bold {
+  font-weight: bold;
+}
+
+.h2--white {
+  color: white;
+}
+
+.h2--orange {
+  color: $color-orange-1;
+}
+
+.h5 {
+  font-size: 2rem;
+}
+
+.h5--white {
+  color: $color-white-1;
+}
+
+.p {
+  font-family: Gotham;
+  font-weight: 100;
+  font-size: 1.6rem;
+}
+
+.p--bold {
+  font-weight: bold;
+}
+
+.p--blue {
+  color: $color-blue-1;
+}
+
+.p--orange {
+  color: $color-orange-1;
+}
+
+.p--white {
+  color: $color-white-1;
+}

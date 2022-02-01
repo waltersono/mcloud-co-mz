@@ -1,0 +1,78 @@
+.header {
+  height: 60rem;
+  background-image: linear-gradient(
+    to bottom,
+    rgba($color-blue-1, 1),
+    rgb(240, 240, 251)
+  );
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__text-box {
+    width: 50%;
+    line-height: 1.2;
+  }
+
+  &__img {
+    width: 40%;
+  }
+
+  &__search-box {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+  }
+
+  &__search-input {
+    flex: 1;
+    padding: 0.8em;
+    border-radius: 3rem;
+    background-color: transparent;
+    border: 0.3rem solid $color-white-1;
+    font-size: 1.4rem;
+  }
+
+  &__search-btn {
+    border-radius: 1.5rem;
+    margin-left: 1rem;
+    background-color: $color-white-1;
+    border: none;
+    outline: none;
+    & > svg {
+      width: 6rem;
+      height: 4rem;
+      fill: $color-blue-1;
+    }
+  }
+
+  &--contact {
+    background-image: none;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .header {
+    &__content {
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+    }
+    &__img {
+      display: none;
+    }
+
+    &__text-box {
+      width: 90%;
+      line-height: 1.2;
+    }
+
+    &__btn {
+      align-self: center;
+    }
+  }
+}

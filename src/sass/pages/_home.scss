@@ -1,0 +1,94 @@
+.section-why-choose {
+  text-align: center;
+}
+
+.section-plans {
+  text-align: center;
+}
+
+.section-possible-plans {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__img {
+    width: 40%;
+  }
+
+  &__text-box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: 5rem;
+    color: $color-blue-1;
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    margin-bottom: 2rem;
+  }
+
+  &__btn {
+    align-self: flex-end;
+  }
+}
+
+.section-why-mcloud-good {
+  text-align: center;
+}
+
+.section-clients {
+  background-color: $color-orange-1;
+  display: flex;
+  align-items: center;
+
+  & > svg {
+    height: 4rem;
+    fill: $color-white-1;
+    opacity: 0.4;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .section-clients {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .section-clients {
+    display: none;
+  }
+
+  .section-why-mcloud-good,
+  .section-why-choose {
+    &__promos {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .section-possible-plans {
+    flex-direction: column;
+    text-align: center;
+    &__btn {
+      align-self: center;
+    }
+
+    &__text-box {
+      order: 1;
+      border: 1px solid red;
+    }
+
+    &__img {
+      order: 0;
+    }
+  }
+  .section-plans {
+    &__plans {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

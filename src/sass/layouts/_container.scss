@@ -1,0 +1,45 @@
+.container {
+  &--sm {
+    padding: 0 25rem;
+  }
+
+  &--md {
+    padding: 0 20rem;
+  }
+
+  &--lg {
+    padding: 0 10rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    &--lg {
+      padding: 0 8rem;
+    }
+
+    &--md {
+      padding: 0 18rem;
+    }
+
+    &--sm {
+      padding: 0 18rem;
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .container {
+    &--lg {
+      padding: 0 2rem;
+    }
+
+    &--md {
+      padding: 0 2rem;
+    }
+
+    &--sm {
+      padding: 0 2rem;
+    }
+  }
+}

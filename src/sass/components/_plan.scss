@@ -1,0 +1,41 @@
+.plan {
+  color: $color-blue-1;
+  display: flex;
+  flex-direction: column;
+  &__img {
+    height: 15rem;
+  }
+
+  &__title {
+    margin: 1rem 0;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: center;
+
+    &-currency {
+      align-self: flex-start;
+    }
+    &-amount {
+      font-size: 6rem;
+      font-weight: bold;
+      color: $color-orange-1;
+      align-self: flex-end;
+    }
+
+    &-subscription {
+      align-self: center;
+    }
+  }
+
+  &__details {
+    list-style-type: none;
+    line-height: 2;
+    margin-bottom: 1rem;
+  }
+
+  &__btn {
+    align-self: center;
+  }
+}
